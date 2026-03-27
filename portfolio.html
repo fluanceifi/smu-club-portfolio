@@ -94,7 +94,7 @@
           <article class="diagram-card">
             <h3>Architecture Diagram</h3>
             <figure>
-              <img src="./image/architecture.png" alt="SMU-CLUB architecture diagram" />
+              <img src="./images/architecture.png" alt="SMU-CLUB architecture diagram" />
               <figcaption>
                 학생 사용자와 운영진은 Client를 통해 서비스에 접근하며, Backend API는 MySQL,
                 OCI Object Storage, SMTP, 외부 인증 시스템과 연동된다.
@@ -105,7 +105,7 @@
           <article class="diagram-card">
             <h3>Data Flow Diagram</h3>
             <figure>
-              <img src="./image/dataflow.png" alt="SMU-CLUB data flow diagram" />
+              <img src="./images/dataflow.png" alt="SMU-CLUB data flow diagram" />
               <figcaption>
                 동아리 조회, 파일 업로드, 지원서 제출, 지원자 관리, 이메일 발송 흐름을 사용자와 운영진 관점에서 정리했다.
               </figcaption>
@@ -124,7 +124,7 @@
           <article class="diagram-card">
             <h3>모집 자동 마감 시퀀스</h3>
             <figure>
-              <img src="./image/recruitmentautoclosersequence.png" alt="Recruitment auto closure sequence" />
+              <img src="./images/recruitmentautoclosersequence.png" alt="Recruitment auto closure sequence" />
               <figcaption>
                 종료 대상 조회 이후 청크 단위로 상태를 갱신하는 구조를 시퀀스 기준으로 정리했다.
               </figcaption>
@@ -134,7 +134,7 @@
           <article class="diagram-card">
             <h3>동아리 상세 조회 시퀀스</h3>
             <figure>
-              <img src="./image/clubdetailsequnce.png" alt="Club detail sequence" />
+              <img src="./images/clubdetailsequnce.png" alt="Club detail sequence" />
               <figcaption>
                 동아리 상세 조회 시 LEFT JOIN FETCH를 사용해 이미지가 없더라도 부모 엔티티가 조회되도록 설계했다.
               </figcaption>
@@ -144,7 +144,7 @@
           <article class="diagram-card">
             <h3>스케줄러 장애 알림 시퀀스</h3>
             <figure>
-              <img src="./image/scheduler.png" alt="Scheduler alert sequence" />
+              <img src="./images/scheduler.png" alt="Scheduler alert sequence" />
               <figcaption>
                 스케줄러 예외 발생 시 AOP 기반으로 Discord Webhook 알림이 전송되는 구조를 나타낸다.
               </figcaption>
