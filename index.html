@@ -47,8 +47,8 @@
           <article class="summary-card">
             <h3>프로젝트 개요</h3>
             <p>
-              SMU-CLUB은 학생이 다양한 동아리를 탐색하고 지원할 수 있도록 <br>지원하며, <br>
-              운영진은 동아리 소개 관리, 모집 상태 전환, 지원자 조회, 결과 통보, <br>
+              SMU-CLUB은 학생이 다양한 동아리를 탐색하고 지원할 수 있도록 지원하며,
+              운영진은 동아리 소개 관리, 모집 상태 전환, 지원자 조회, 결과 통보,
               파일 업로드 등의 운영 업무를 하나의 서비스에서 처리할 수 있도록 설계한 플랫폼이다.
             </p>
           </article>
@@ -67,7 +67,7 @@
           <article class="summary-card">
             <h3>운영 관점 의사결정</h3>
             <p>
-              서비스 운영 과정에서 외부 인증 의존 구조의 리스크를 검토하고, <br>
+              서비스 운영 과정에서 외부 인증 의존 구조의 리스크를 검토하고,
               학교 관계자들과의 협의 이후 운영진 계정 로그인과 일반 지원자 비로그인 지원 구조로의
               전환 방향을 주도적으로 정리했다.
             </p>
@@ -339,26 +339,37 @@ Optional&lt;Club&gt; findByIdWithClubImages(Long clubId);</code></pre>
         </div>
 
         <div class="footer-note">
-          <strong>참고 근거</strong><br />
-          코드 저장소:
-          <a href="https://github.com/smu-human/smu-club">https://github.com/smu-human/smu-club</a><br />
-          스케줄러/배치 관련 클래스:
-          <code>RecruitmentAutoClosureScheduler</code>,
-          <code>EmailRetryScheduler</code>,
-          <code>EmailRetryService</code>,
-          <code>ExpiredClubMemberCleanupScheduler</code><br />
-          조회 관련 클래스:
-          <code>GuestClubController</code>,
-          <code>GuestClubService</code>,
-          <code>ClubRepository</code><br />
-          응답 표준화 관련 클래스:
-          <code>ApiResponseDto</code>,
-          <code>ClubsRepresentationAssembler</code>,
-          <code>ClubResponseDto</code> <br>
-          기술 포스팅:
-          <a href="https://fluanceifi.tistory.com/40">스케줄러가 조용히 실패했다</a>,
-          <a href="https://fluanceifi.tistory.com/42">단일 트랜잭션의 함정에서 Chunk 처리까지</a><br />
-
+          <strong>참고 근거</strong>
+          <ul class="tight-list refs-list">
+            <li>
+              코드 저장소:
+              <a href="https://github.com/smu-human/smu-club">https://github.com/smu-human/smu-club</a>
+            </li>
+            <li>
+              스케줄러/배치 관련 클래스:
+              <code>RecruitmentAutoClosureScheduler</code>,
+              <code>EmailRetryScheduler</code>,
+              <code>EmailRetryService</code>,
+              <code>ExpiredClubMemberCleanupScheduler</code>
+            </li>
+            <li>
+              조회 관련 클래스:
+              <code>GuestClubController</code>,
+              <code>GuestClubService</code>,
+              <code>ClubRepository</code>
+            </li>
+            <li>
+              응답 표준화 관련 클래스:
+              <code>ApiResponseDto</code>,
+              <code>ClubsRepresentationAssembler</code>,
+              <code>ClubResponseDto</code>
+            </li>
+            <li>
+              기술 포스팅:
+              <a href="https://fluanceifi.tistory.com/40">스케줄러가 조용히 실패했다</a>,
+              <a href="https://fluanceifi.tistory.com/42">단일 트랜잭션의 함정에서 Chunk 처리까지</a>
+            </li>
+          </ul>
         </div>
       </section>
     </main>

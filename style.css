@@ -282,6 +282,21 @@ pre {
   font-size: 0.92rem;
 }
 
+.footer-note strong {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--ink);
+}
+
+.refs-list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.refs-list li {
+  overflow-wrap: anywhere;
+}
+
 .tight-list li + li {
   margin-top: 6px;
 }
@@ -292,46 +307,138 @@ pre {
 
 @page {
   size: A4;
-  margin: 14mm;
+  margin: 12mm;
 }
 
 @media print {
+  html {
+    font-size: 14px;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
   body {
     background: white;
+    line-height: 1.55;
   }
 
   .document {
-    width: 100%;
+    width: auto;
     margin: 0;
   }
 
   .page {
     margin: 0;
-    padding: 14mm 14mm 16mm;
+    padding: 0;
     border: none;
     border-radius: 0;
     box-shadow: none;
-    break-after: page;
+    overflow: visible;
+    break-after: auto;
+    page-break-after: auto;
   }
 
-  .page:last-child {
-    break-after: auto;
+  .page + .page {
+    break-before: page;
+    page-break-before: always;
   }
 
   .page::before {
-    height: 5px;
+    display: none;
   }
 
   .hero h1 {
-    font-size: 2.25rem;
+    font-size: 2.05rem;
+  }
+
+  .section-title {
+    margin-bottom: 10px;
+    font-size: 1.55rem;
+  }
+
+  .section-desc {
+    margin-bottom: 16px;
+  }
+
+  .meta-grid,
+  .summary-grid,
+  .improvements-grid,
+  .diagram-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .problem-list {
+    gap: 12px;
+  }
+
+  .meta-card,
+  .summary-card,
+  .improvement-card,
+  .diagram-card,
+  .problem-card,
+  .footer-note,
+  figure,
+  pre {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .meta-card {
+    padding: 14px 16px;
+  }
+
+  .summary-card,
+  .improvement-card {
+    padding: 16px;
+  }
+
+  .diagram-card,
+  .problem-card {
+    padding: 16px;
+  }
+
+  h1,
+  h2,
+  h3,
+  .subheading {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  p,
+  li,
+  figcaption {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .stack {
+    gap: 6px;
+    margin-top: 18px;
+  }
+
+  .chip {
+    padding: 6px 10px;
+    font-size: 0.84rem;
   }
 
   .diagram-card img {
-    max-height: 220mm;
+    max-height: 120mm;
     object-fit: contain;
+  }
+
+  pre {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
   }
 
   a {
     text-decoration: none;
+    overflow-wrap: anywhere;
+    word-break: break-all;
   }
 }
