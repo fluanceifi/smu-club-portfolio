@@ -1,15 +1,15 @@
 :root {
-  --bg: #f6f3ee;
-  --paper: #fffdf9;
-  --ink: #1f2430;
-  --muted: #5e6472;
-  --line: #ddd6cb;
-  --accent: #9f6d3d;
-  --accent-soft: #efe4d6;
-  --accent-strong: #724726;
-  --success: #325d4b;
-  --code-bg: #f5efe7;
-  --shadow: 0 18px 48px rgba(35, 28, 20, 0.08);
+  --bg: #f4f7fb;
+  --paper: #f8fbff;
+  --ink: #18212f;
+  --muted: #5f6b7a;
+  --line: #d0daea;
+  --accent: #1f6feb;
+  --accent-soft: rgba(31, 111, 235, 0.08);
+  --accent-strong: #174ea6;
+  --success: #1a5fa8;
+  --code-bg: #eef3fb;
+  --shadow: 0 18px 48px rgba(20, 30, 50, 0.08);
 }
 
 * {
@@ -22,7 +22,7 @@ html {
 
 body {
   margin: 0;
-  background: linear-gradient(180deg, #f4efe8 0%, #f7f5f1 100%);
+  background: linear-gradient(180deg, #f0f5fc 0%, #eef3f8 100%);
   color: var(--ink);
   font-family: "Pretendard", "SUIT", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
   line-height: 1.7;
@@ -46,7 +46,7 @@ pre {
   overflow: auto;
   border: 1px solid var(--line);
   border-radius: 14px;
-  background: #fcfaf7;
+  background: #f5f9ff;
   font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
   font-size: 0.88rem;
   line-height: 1.6;
@@ -61,7 +61,7 @@ pre {
   position: relative;
   margin-bottom: 28px;
   padding: 44px 52px 52px;
-  border: 1px solid rgba(110, 92, 68, 0.16);
+  border: 1px solid rgba(31, 111, 235, 0.12);
   border-radius: 28px;
   background: var(--paper);
   box-shadow: var(--shadow);
@@ -73,7 +73,7 @@ pre {
   position: absolute;
   inset: 0 0 auto 0;
   height: 7px;
-  background: linear-gradient(90deg, #b88b56 0%, #dfc4a4 50%, #8c6239 100%);
+  background: linear-gradient(90deg, #1f6feb 0%, #93c5fd 50%, #174ea6 100%);
 }
 
 .hero {
@@ -138,7 +138,7 @@ pre {
 .problem-card {
   border: 1px solid var(--line);
   border-radius: 20px;
-  background: #fffdfa;
+  background: #f8fbff;
 }
 
 .meta-card {
@@ -186,10 +186,10 @@ pre {
 
 .chip {
   padding: 8px 12px;
-  border: 1px solid #d8ccb9;
+  border: 1px solid rgba(31, 111, 235, 0.2);
   border-radius: 999px;
-  background: #faf5ee;
-  color: #4c4034;
+  background: rgba(31, 111, 235, 0.06);
+  color: #174ea6;
   font-size: 0.92rem;
   font-weight: 600;
 }
@@ -222,7 +222,7 @@ pre {
   height: auto;
   display: block;
   border-radius: 16px;
-  border: 1px solid #e4ddd2;
+  border: 1px solid #d0daea;
   background: white;
 }
 
